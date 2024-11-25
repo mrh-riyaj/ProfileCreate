@@ -1,2 +1,4 @@
-let d = document.getElementById("p");
-d.innerHTML = "Hello bangladeshi";
+const p = (e) => {
+     let d = document.getElementById("p");
+     d.innerHTML += e;
+}
