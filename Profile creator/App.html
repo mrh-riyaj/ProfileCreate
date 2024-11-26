@@ -7,8 +7,109 @@
      <link rel="stylesheet" href="./App.css">
 </head>
 <body>
-     <div id="p" onclick="p(' Hello bangladeshi')">Hello world</div>
-     <div id="p" onclick="p(' Hello bangladeshi')">Hello world</div>
+     <section class="main-container">
+          <div class="content-body">
+               <div class="row">
+                    <div class="clm">
+                         <div class="inputBox">
+                              <input id="first-name" class="input" type="text" required="required">
+                              <span class="label">First name</span>
+                         </div>
+                    </div>
+                    <div class="clm">
+                         <div class="inputBox">
+                              <input class="input" type="text" required="required">
+                              <span class="label">Last name</span>
+                         </div>
+                    </div>
+               </div>
+               <div class="row">
+                    <div class="clm">
+                         <div class="inputBox">
+                              <input class="input" type="text" required="required">
+                              <span class="label">Father's name</span>
+                         </div>
+                    </div>
+                    <div class="clm">
+                         <div class="inputBox">
+                              <input class="input" type="text" required="required">
+                              <span class="label">Mother's name</span>
+                         </div>
+                    </div>
+               </div>
+               <div class="row">
+                    <div class="clm">
+                         <div class="inputBox">
+                              <input class="input" type="number" required="required">
+                              <span class="label">Phone</span>
+                         </div>
+                    </div>
+                    <div class="clm">
+                         <div class="inputBox">
+                              <input class="input" type="text" required="required">
+                              <span class="label">E-mail.con</span>
+                         </div>
+                    </div>
+               </div>
+               <div class="row">
+                    <div class="clm">
+                         <div class="inputBox">
+                              <select class="input-select" required="required">
+                                   <option class="label">-- Select --</option>
+                                   <option value="male">Male</option>
+                                   <option value="female">Female</option>
+                              </select>
+                              <!-- <input type="text" required="required">
+                              <span class="label">firstName</span> -->
+                         </div>
+                    </div>
+                    <div class="clm">
+                         <div class="inputBox">
+                              <input class="input" type="date" required="required">
+                              <!-- <span class="label">lastName</span> -->
+                         </div>
+                    </div>
+                    <div class="clm">
+                         <div class="inputBox">
+                              <input class="input" type="number" required="required">
+                              <span class="label">Age</span>
+                         </div>
+                    </div>
+               </div>
+               <div class="row">
+                    <div class="clm">
+                         <div class="inputBox">
+                              <textarea
+                                   rows="3"
+                                   type="text"
+                                   class="input"
+                                   required="required"
+                                   placeholder="Current address :"
+                              ></textarea>
+                         </div>
+                    </div>
+                    <div class="clm">
+                         <div class="inputBox">
+                              <textarea
+                                   rows="3"
+                                   type="text"
+                                   class="input"
+                                   required="required"
+                                   placeholder="Permanent address :"
+                              ></textarea>
+                         </div>
+                    </div>
+               </div>
+               <div class="row">
+                    <div class="clm btn-clm">
+                         <button onclick="submit()" class="submit">Add New</button>
+                    </div>
+               </div>
+          </div>
+          <div class="content-body">
+               <div id="dis">Display here...</div>
+          </div>
+     </section>
      <script src="./App.js"></script>
 </body>
 </html>
