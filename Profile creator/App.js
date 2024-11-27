@@ -1,4 +1,11 @@
-const submit = () => {
-     let firstName = document.getElementById("first-name").value;
-     document.getElementById("dis").innerHTML = firstName;
-}
+const form = document.getElementById("form");
+form.addEventListener("submit", (e) => {
+     e.preventDefault();
+     const fd = new FormData(form);
+     const obj = Object.fromEntries(fd);
+     
+     const json = JSON.stringify(obj);
+     localStorage.setItem("from", json);
+
+     window.location.href = "store.html";
+})

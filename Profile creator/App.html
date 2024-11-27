@@ -8,31 +8,25 @@
 </head>
 <body>
      <section class="main-container">
-          <div class="content-body">
+          <form id="form" class="content-body">
                <div class="row">
                     <div class="clm">
                          <div class="inputBox">
-                              <input id="first-name" class="input" type="text" required="required">
-                              <span class="label">First name</span>
-                         </div>
-                    </div>
-                    <div class="clm">
-                         <div class="inputBox">
-                              <input class="input" type="text" required="required">
-                              <span class="label">Last name</span>
+                              <input name="name" class="input" type="text" required="required">
+                              <span class="label">Full name</span>
                          </div>
                     </div>
                </div>
                <div class="row">
                     <div class="clm">
                          <div class="inputBox">
-                              <input class="input" type="text" required="required">
+                              <input name="father-name" class="input" type="text" required="required">
                               <span class="label">Father's name</span>
                          </div>
                     </div>
                     <div class="clm">
                          <div class="inputBox">
-                              <input class="input" type="text" required="required">
+                              <input name="mother-name" class="input" type="text" required="required">
                               <span class="label">Mother's name</span>
                          </div>
                     </div>
@@ -40,13 +34,13 @@
                <div class="row">
                     <div class="clm">
                          <div class="inputBox">
-                              <input class="input" type="number" required="required">
+                              <input name="phone" class="input" type="number" required="required">
                               <span class="label">Phone</span>
                          </div>
                     </div>
                     <div class="clm">
                          <div class="inputBox">
-                              <input class="input" type="text" required="required">
+                              <input name="email" class="input" type="text" required="required">
                               <span class="label">E-mail.con</span>
                          </div>
                     </div>
@@ -54,24 +48,21 @@
                <div class="row">
                     <div class="clm">
                          <div class="inputBox">
-                              <select class="input-select" required="required">
-                                   <option class="label">-- Select --</option>
+                              <select name="gender" class="input-select" required="required">
+                                   <option value="" class="label">-- Select --</option>
                                    <option value="male">Male</option>
                                    <option value="female">Female</option>
                               </select>
-                              <!-- <input type="text" required="required">
-                              <span class="label">firstName</span> -->
                          </div>
                     </div>
                     <div class="clm">
                          <div class="inputBox">
-                              <input class="input" type="date" required="required">
-                              <!-- <span class="label">lastName</span> -->
+                              <input name="birth" class="input" type="date" required="required">
                          </div>
                     </div>
                     <div class="clm">
                          <div class="inputBox">
-                              <input class="input" type="number" required="required">
+                              <input name="age" class="input" type="number" required="required">
                               <span class="label">Age</span>
                          </div>
                     </div>
@@ -79,36 +70,27 @@
                <div class="row">
                     <div class="clm">
                          <div class="inputBox">
-                              <textarea
-                                   rows="3"
-                                   type="text"
-                                   class="input"
-                                   required="required"
-                                   placeholder="Current address :"
-                              ></textarea>
+                              <input name="address" class="input" type="text" required="required">
+                              <span class="label">Address</span>
                          </div>
                     </div>
+               </div>
+               <!-- <div class="row">
                     <div class="clm">
                          <div class="inputBox">
-                              <textarea
-                                   rows="3"
-                                   type="text"
-                                   class="input"
-                                   required="required"
-                                   placeholder="Permanent address :"
-                              ></textarea>
+                              <input name="image" class="input" type="file" required="required">
                          </div>
                     </div>
-               </div>
+               </div> -->
                <div class="row">
                     <div class="clm btn-clm">
-                         <button onclick="submit()" class="submit">Add New</button>
+                         <button class="submit">Submit</button>
                     </div>
                </div>
-          </div>
-          <div class="content-body">
+          </form>
+          <!-- <div class="content-body">
                <div id="dis">Display here...</div>
-          </div>
+          </div> -->
      </section>
      <script src="./App.js"></script>
 </body>
