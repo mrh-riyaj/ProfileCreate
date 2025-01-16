@@ -1,7 +1,7 @@
 const json = localStorage.getItem("from");
-console.log(json)
+// console.log(json)
 const obj = JSON.parse(json);
-console.log(obj)
+// console.log(obj)
 
 for(key in obj) {
      const markup = `
